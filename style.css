@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: 'Satisfy', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Kalam', cursive; */
+
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* span.num{
+  font-family: 'Satisfy', cursive;
+} */
+:root {
+  --themePrimary: #4fb16e;
+  --themeSecondary: #23743e;
+  --themeInfo: #36ea72;
+}
+
+/* text-custom */
+.text-primary {
+  color: var(--themePrimary) !important;
+}
+
+.text-secondary {
+  color: var(--themeSecondary) !important;
+}
+
+.text-info {
+  color: var(--themeInfo) !important;
+}
+
+/* /bg-custom */
+
+/* bg-custom */
+.bg-primary {
+  background-color: var(--themePrimary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--themeSecondary) !important;
+}
+
+.bg-info {
+  background-color: var(--themeInfo) !important;
+}
+
+/* /bg-custom */
+
+/* btn-custom */
+.btn-primary {
+  background-color: var(--themePrimary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--themeSecondary) !important;
+}
+
+.btn-info {
+  background-color: var(--themeInfo) !important;
+}
+
+/* /btn-custom */
+
+/* border-custom */
+.border-primary {
+  border-color: var(--themePrimary) !important;
+}
+
+.border-secondary {
+  border-color: var(--themeSecondary) !important;
+}
+
+.border-info {
+  border-color: var(--themeInfo) !important;
+}
+
+/* /border-custom */
+
+/* padding-custom */
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.py-100 {
+  padding: 100px 0px;
+}
+
+.pt-82 {
+  padding-top: 82px;
+}
+/* /padding-custom */
+
+/* fontSize-custom */
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-10 {
+  font-size: 10px;
+}
+/* /fontSize-custom */
+
+/* Before for all banners */
+.before {
+  position: relative;
+  z-index: 0;
+}
+
+.before::before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.358);
+}
+/* /Before for all banners */
+
+/* end-Custon css */
+
+/* navbar start */
+.navbar {
+  width: 100%;
+  margin: auto;
+}
+
+.nav_link {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 150px;
+  height: 52px;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 26px;
+  background: var(--themePrimary);
+  transition: all 0.2s ease-out;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white !important;
+}
+
+.nav_link .iconcover {
+  display: inline-block;
+  width: 52px;
+  background: var(--themePrimary);
+  height: 52px;
+  border-radius: 26px;
+  box-sizing: border-box;
+}
+
+.nav_link .iconcover {
+  font-size: 24px;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav_link span {
+  display: inline-block;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+/* \Navbar end */
+
+/* landing-area start */
+.landing_area {
+  background: url(./images/fifthbanner.jpg) no-repeat center/cover;
+}
+/* landing-area end */
+
+/* team_members */
+.team_members .card img {
+  height: 250px;
+  object-fit: cover;
+}
+/* \team_members */
+.joinform {
+  background: rgba(0,0,0,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.25);
+  height: 100%;
+}
+
+.modal-dialog{
+  max-width: 100% !important;
+}
+
+
+/* \Login Modal */
+
+/* media 992 width min.. */
+@media only screen and (min-width: 992px) {
+  .nav_link {
+    width: 52px;
+  }
+
+  .nav_link:hover {
+    width: 150px;
+  }
+}
+
+/* \media 992 width min.. */
+
+/* media 1400 max-width */
+
+@media (max-width:1399.98px){
+}
+
+/* media 992 width max.. */
+@media (max-width: 991.98px) {
+  .float_nav {
+    width: 100% !important;
+  }
+  .nav_link .iconcover {
+    background: gray;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    background: rgb(223, 223, 223);
+    max-width: 380px;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    transition-delay: 0ms !important;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.232);
+  }
+  .navbar-collapse ul li a {
+    color: white !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0px 0px 0px transparent !important;
+  }
+
+  .collapse:not(.show) {
+    display: block !important;
+    height: 100vh !important;
+    left: -100% !important;
+  }
+}
+
+@media (max-width:767.98px){
+}
+
+/* \media 992 width max.. */
+
+/* 1500px screen width set */
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+
+/* \1500px screen width set */
